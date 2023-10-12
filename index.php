@@ -35,7 +35,7 @@ include("header.php");
   <div class="container boxFestival">
     
       <div class="col-lg-8 text-center">
-        <h2 class=" mt-0">Il Festival</h2>
+        <h2 class=" mt-0">L'evento</h2>
         <hr class="divider divider-light" />
         <h5 >
           <b>

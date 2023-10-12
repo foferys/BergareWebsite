@@ -19,7 +19,7 @@
                         <h5>Menu</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="index.php" class="nav-link p-0 text-muted">Home</a></li>
-                            <li class="nav-item mb-2"><a href="festival.php" class="nav-link p-0 text-muted">Il Festival</a></li>
+                            <li class="nav-item mb-2"><a href="festival.php" class="nav-link p-0 text-muted">L'evento</a></li>
                             <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Ospiti</a></li>
                             <li class="nav-item mb-2"><a href="programma.php" class="nav-link p-0 text-muted">Il programma</a></li>
                         </ul>

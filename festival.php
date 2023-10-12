@@ -11,7 +11,7 @@ include("header.php");
 
                 <img style="width: 100px;" src="./assets/img/logoBergare.png" alt="">
 
-                <h1 style="color: #5f413b;" class="font-weight-bold"><b>Il Festival</b></h1>
+                <h1 style="color: #5f413b;" class="font-weight-bold"><b>L'evento</b></h1>
                 <hr class="divider bg-warning" />
             </div>
 
