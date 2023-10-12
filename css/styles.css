@@ -11105,7 +11105,10 @@ header.masthead h1, header.masthead .h1 {
   height: 100%;
   object-fit: cover;
 }
-
+.instagram-media {
+  height: 490px;
+  overflow: hidden;
+}
 
 
 .sticky {
