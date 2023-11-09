@@ -11133,6 +11133,23 @@ header.masthead h1, header.masthead .h1 {
   width:100%;
   height:200px;
 }
+.galleryCont {
+  margin-top: 90px ;
+
+
+}
+.rowGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px;
+}
+.rowGallery img {
+  height: 300px;
+  margin: 15px;
+}
+
+
 
 
 @media (min-width: 992px) {

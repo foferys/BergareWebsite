@@ -9,6 +9,7 @@
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
                 <li class="nav-item"><a class="nav-link text-black" href="index.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link text-black" href="festival.php">L'evento</a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="galleria.php">Galleria</a></li>
                 <li class="nav-item"><a class="nav-link text-black" href="programma.php">Programma</a></li>
                 <li class="nav-item"><a class="nav-link text-black" href="#footer">Contatti</a></li>
             </ul>
