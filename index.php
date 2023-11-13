@@ -1,6 +1,8 @@
 <?php
 include("head.php");
 include("header.php");
+
+
 ?>
 <!-- Masthead-->
 <header class="masthead">
@@ -62,81 +64,44 @@ include("header.php");
         <hr class="divider divider-light" />
 
         <div class="container">
-          <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
+          <div class="ospitiColumn row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
 
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
+            <?php 
+            $directory = './assets/img/ospiti'; //il percorso della cartella delle foto.
+            $photoNames = [];
 
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
+            
+            if (is_dir($directory)) {
+                if ($handle = opendir($directory)) {
+                    while (false !== ($entry = readdir($handle))) {
+                        if ($entry != "." && $entry != "..") {
+                            $photoNames[] = $entry;
+                        }
+                    }
+                    closedir($handle);
+                }
+            }
+            
 
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
+            foreach($photoNames as $foto) {
+              /* ricavo il nome dal file togliendo .jpg */
+              $posizione_punto = strpos($foto, '.'); // Trova la posizione del punto
+              $nome ="";
+              if ($posizione_punto !== false) {
+                $nome = substr($foto, 0, $posizione_punto); // Estrae dalla posizione 0 fino al punto e lo aseegno alla variabile $nome
+              }
+            ?>  
+              <div class="col imgcont">
+                <div class="imgOspCerchio">
+                  <img src="./assets/img/ospiti/<?php echo $foto;?>" alt="">
+                </div>
+                <h3><?php echo $nome;?></h3>
               </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="col imgcont">
-              <div class="imgOspCerchio">
-                <img src="./assets/img/ritratto.png" alt="">
-              </div>
-              <h3>Nome Ospite</h3>
-              <p>Lorem ipsum dolor sit.</p>
-            </div>
+            <?php
+            }
 
+            ?>
+            
           </div>
         </div>
       </div>

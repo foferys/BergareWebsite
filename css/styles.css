@@ -11008,6 +11008,9 @@ header.masthead h1, header.masthead .h1 {
   height: 1200px;
   background-color: #fff !important;
 }
+.imgcont {
+  width: 20%;
+}
 #programma {
   position: relative;
   height: 600px;
@@ -11247,5 +11250,11 @@ header.masthead h1, header.masthead .h1 {
   }
   #imgModale {
     width: 98%;
+  }
+  .imgcont {
+    width: inherit;
+  }
+  .ospitiColumn {
+    display: block;
   }
 }
