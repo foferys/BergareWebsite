@@ -78,6 +78,15 @@ include("header.php");
               <h3>Nome Ospite</h3>
               <p>Lorem ipsum dolor sit.</p>
             </div>
+
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+
             <div class="col imgcont">
               <div class="imgOspCerchio">
                 <img src="./assets/img/ritratto.png" alt="">
@@ -92,6 +101,42 @@ include("header.php");
               <h3>Nome Ospite</h3>
               <p>Lorem ipsum dolor sit.</p>
             </div>
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+            <div class="col imgcont">
+              <div class="imgOspCerchio">
+                <img src="./assets/img/ritratto.png" alt="">
+              </div>
+              <h3>Nome Ospite</h3>
+              <p>Lorem ipsum dolor sit.</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -101,7 +146,7 @@ include("header.php");
 
 
 <!-- programmaa-->
-<section class="page-section position-relative overflow-hidden" id="ospiti">
+<section class="page-section position-relative overflow-hidden" id="programma">
   <div class="overlay"></div>
 
   <video playsinline autoplay muted loop>

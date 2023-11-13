@@ -11003,12 +11003,17 @@ header.masthead h1, header.masthead .h1 {
   background-color: #f5cf04;
 }
 
-#ospiti {
+#ospiti{
+  position: relative;
+  height: 1200px;
+  background-color: #fff !important;
+}
+#programma {
   position: relative;
   height: 600px;
   background-color: #fff !important;
 }
-#ospiti video{
+#programma video{
   width: 100%;
   height: 100%;
   top: 0;
@@ -11145,11 +11150,41 @@ header.masthead h1, header.masthead .h1 {
   margin: 15px;
 }
 .rowGallery img {
-  height: 300px;
+  height: 180px;
   margin: 15px;
+  width: 180px;
+  object-fit: cover;
+  cursor: pointer;
+}
+#imgModale {
+  width: 60%;
 }
 
 
+
+.boxModale {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000000a8;
+  z-index: 9999;
+}
+.close {
+  position: absolute;
+  top: 9%;
+  right: 20%;
+  font-size: 33px;
+  color: white;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
 
 
 @media (min-width: 992px) {
@@ -11183,7 +11218,13 @@ header.masthead h1, header.masthead .h1 {
     height: 600px;
   }
   #ospiti {
-    height: 1550px;
+    height: fit-content;
+  }
+  .boxOspiti {
+    position: inherit;
+  }
+  #programma {
+    height: 100vh;
   }
   .bergVettore {
     width: 141%;
@@ -11203,5 +11244,8 @@ header.masthead h1, header.masthead .h1 {
   }
   #navbar-example2 a {
     font-size: 12px !important;
+  }
+  #imgModale {
+    width: 98%;
   }
 }

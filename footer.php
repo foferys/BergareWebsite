@@ -5,9 +5,10 @@
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
 
 
-
+        
         </footer> -->
       <!--   <hr style="width: 80%; margin: 0 auto;"> -->
+        <hr style="margin: 0 30%;">
         <div class="container">
             <footer id="footer" class="py-5">
                 <div class="row">
