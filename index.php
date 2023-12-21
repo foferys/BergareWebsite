@@ -115,7 +115,7 @@ include("header.php");
   <div class="overlay"></div>
 
   <video playsinline autoplay muted loop>
-      <source src="./assets/video/1.mov" type="video/mp4">
+      <source src="./assets/video/1.mp4" type="video/mp4">
   </video>
 
 
