@@ -11095,6 +11095,7 @@ header.masthead h1, header.masthead .h1 {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  font-size: 0.9rem;
 }
 .bergVettore2 {
   position: absolute;
